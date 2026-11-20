@@ -89,6 +89,13 @@ h2{font-size:18px;color:var(--blue);margin:0;white-space:nowrap}
 .leadLegend{font-size:9px;gap:5px 9px}
 .subtitle{font-size:9px}
 .dMeta,.dRole{font-size:12px;line-height:1.35}
+</style><style id="expanded-layout">
+.page{height:680px!important;padding-top:6px!important;padding-bottom:6px!important}
+.grid{height:668px!important;grid-template-rows:400px 250px!important;gap:18px!important}
+.sec{padding-top:10px!important;padding-bottom:12px!important}
+.mrow{min-height:44px;padding:3px 0}
+.mlabel{min-height:36px;display:flex;flex-direction:column;justify-content:center}
+.stagelead{height:190px!important;margin-top:8px!important}
 </style></head>
 <body>
 <main class="page">
@@ -246,7 +253,7 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') closeDrawer(); 
 
 /* Robust Genially fit */
 (function(){
-  const BASE_W=1200, BASE_H=550;
+  const BASE_W=1200, BASE_H=680;
   function fit(){
     const page=document.querySelector('.page');
     if(!page) return;
